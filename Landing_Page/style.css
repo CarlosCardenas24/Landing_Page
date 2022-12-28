@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+@media screen and (max-height: 730px) {
+    body { overflow: auto }
+    .only-small {display: none;}
+}
+
+.image-container-desk {
+    display: none;
+}
+
+.menu {
+    display: none; 
+}
+
+#screen {
+    display: none;
+}
+
+#nav-container {
+    background-color: #223A60;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+#mobile-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+ }
+
+ #logo {
+    margin: 1rem;
+    color: whitesmoke;
+    padding: 0.5rem;
+    border: 2px dashed;
+    border-radius: 50px;
+ }
+
+.menu a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    font-size: 1.3rem;
+    padding: 0.5rem 2.5rem;
+    border: 2px dashed;
+    border-radius: 10px;
+    margin-left: 0;
+ } 
+
+ #nav-burger {
+    font-size: 1.8rem;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    padding-right: 1rem;
+ }
+
+ .show-menu {
+    list-style-type: none;
+    margin-right: 2rem;
+    margin-bottom: 0rem;
+
+    display: flex;
+    position: relative;
+    top: -3rem;
+    justify-content: center;
+    background-color: #223A60;
+ }
+
+ #background {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin-top: 3.6rem;
+
+    background-image: url('./img/Rectangle 8.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+ }
+
+.home-main {
+    position: absolute;
+    width: 100%;
+    margin: 8rem auto auto auto;
+}
+
+.desk {
+    display: none;
+}
+
+.main-area {
+    width: 100%;
+    justify-content: center;
+}
+
+.main-area h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.main-area p {
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bolder;
+    max-width: 450px;
+}
+
+#mc_embed_signup {
+    display: flex;
+    justify-content: center;
+    background: transparent; 
+    clear:left; 
+    font: 1.5rem;  
+    width: 80%;
+    margin: auto;
+}
+
+#mc-embedded-subscribe-form {
+    margin: 0 !important;
+}
+
+#mce-EMAIL {
+    color: black;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1rem !important;
+    margin: auto;
+    width: 100%;
+}
+
+.clear-foot {
+    text-align: center;
+}
+
+.button {
+   color: whitesmoke !important;
+   background-color:  #223A60 !important;
+   font-family: 'Poppins', sans-serif !important;
+}
+/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+.container-container {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    justify-content: center;
+}
+
+.image-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100vw;
+    max-width: 600px;
+}
+
+.image-container::before {
+    margin: auto;
+    position: absolute;
+    justify-content: center;
+    top: +5%;
+    left: +15%;
+    width: 76%;
+    height: 98%;
+    max-width: 450px;
+    border: .2rem dashed #223A60;
+    content: '';
+}
+
+.image-container img {
+    position: relative;
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin: auto;
+    max-width: 450px;
+    max-height: 300px;
+}
+
+.about-header {
+    display: none;
+}
+
+.about-main {
+    position: absolute;  
+    margin-top: 11rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;   
+    margin: auto;
+    padding: 1.5rem 2rem;
+    background-color: #223A60;
+    color: whitesmoke;
+    width: 70%;
+}
+
+.email, .email a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.thank-main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.pepe {
+    display: none;
+}
+
+@media screen and (min-width: 1600px){
+    #mobile-screen {
+        display: none;
+    }
+
+    #screen {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+
+    #logox {
+        color: whitesmoke;
+        padding: 0.5rem;
+        border: 2px dashed;
+        border-radius: 50px;
+        margin-left: 5rem;
+    }
+
+    #name-logo {
+        display: inline;
+        width: 100%;
+        text-align: left;
+        font-size: 1rem;
+        color: whitesmoke;
+        margin-left: 1rem;
+    }
+
+    .about {
+        list-style-type: none;
+        margin-right: 10rem;
+        justify-content: right;
+        background-color: #223A60;
+    }
+
+    .about a {
+        text-decoration: none;
+        color: whitesmoke;
+        display: flex;
+        font-size: 1.3rem;
+        padding: 0.5rem 2.5rem;
+        border: 2px dashed;
+        border-radius: 10px;
+        margin-left: 0;
+    }
+
+    .home-main {
+        margin: 13rem auto auto 8rem;
+    }
+
+    .desk {
+        display: inline;
+    }
+
+    .main-area {
+        justify-content: left;
+        text-align: left;
+    }
+
+    .main-area h1{
+        text-align: left;
+        font-size: 5rem;
+    }
+
+    .main-area p {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    #mc_embed_signup {
+        margin-left: 0 !important;
+        justify-content: left !important;
+    }
+
+    #mc-embedded-subscribe-form {
+        margin-left: 0 !important;
+        z-index: 1;
+    }
+
+    #mce-EMAIL {
+        margin: 1rem !important;
+        padding: 1rem !important;
+        height: 1rem !important;
+        width: 500px !important;
+
+    }
+
+    .optionalParent {
+        height: 4rem !important;
+    }
+
+    #mc-embedded-subscribe {
+        font-size: 1.5rem !important;
+        height: 4rem !important;
+        width: 60% !important;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .image-container-desk {
+        display: flex;
+        position: relative;
+        justify-content: right;
+        width: 100%;
+    }
+
+    .image-container-desk img {
+        position: relative;
+        width: 35%;
+        display: block;
+        margin: 15rem 10rem auto auto;
+    }
+
+    .about-main {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about-header {
+        display: inline;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .about-container {
+        width: 25%;
+    }
+
+    .thank-main {
+        font-size: 2rem;
+    }
+
+    .pepe {
+        display: flex;
+        position: absolute;
+        justify-content: right;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .pepe img {
+        margin-top: 18rem;
+        position: absolute;
+        display: block;
+        width: 5px;
+        height: 5px;
+    }
+}
+
+@media  screen and (min-width: 1950px) {
+    #mce-EMAIL {
+        font-size: 1.5rem !important;
+        height: 2rem !important;
+    }
+}
